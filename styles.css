@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Epilogue:ital,wght@0,500;0,700;1,500;1,700&family=Space+Grotesk:wght@500&display=swap');
+:root {
+  --Almost_White: hsl(0, 0%, 98%);
+  --Medium_Gray: hsl(0, 0%, 41%);
+  --Almost_Black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Big Shoulders Display', cursive;
+  font-family: 'Epilogue', sans-serif;
+  font-size: 15px;
+  color: var(--Medium_Gray);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.register {
+  border: solid 1px;
+  border-radius: 15px;
+}
+.logo {
+  padding: 20px;
+  font-weight: bold;
+  color: black;
+}
+.titulo {
+  font-size: 5rem ;
+  font-weight: bolder;
+  color: var(--Almost_Black);
+  margin-bottom: 50px;
+}
+.image {
+  height: 500px;
+  width: 50%;
+  background-image: url(images/image-hero-desktop.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.img_button {
+  width: 100%;
+  display: flex;
+}
+.img_button img {
+  padding: 1rem;
+}
+@media screen and (max-width:992px) {
+  .titulo {
+    font-size: 3rem;
+  }
+  .image {
+  height: calc(100vh*.6);
+  width: 100%;
+  background-image: url(images/image-hero-mobile.png);
+  }
+}
